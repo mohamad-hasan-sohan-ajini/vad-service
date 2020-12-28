@@ -1,0 +1,7 @@
+fastapi
+uvicorn
+soundfile
+webrtcvad
+ffmpeg-python
+numpy
+python-multipart
