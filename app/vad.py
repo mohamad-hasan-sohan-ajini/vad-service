@@ -200,7 +200,7 @@ def vad(av_content):
             'end': segment['end'],
             'duration': segment['duration'],
             'aggressiveness': segment['aggressiveness'],
-            'data': base64.b64encode(segment['data'])
+            'data': base64.b64encode(wav_data_to_wav_content(segment['data']))
         }
         for segment in segments
         if segment['duration'] > min_duration

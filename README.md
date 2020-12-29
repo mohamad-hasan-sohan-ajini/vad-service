@@ -6,15 +6,15 @@ Run the docker: `./run.sh`
 
 Sample client:
 1. python client: `python client.py path/to/audio_video/file`
-2. curl client: `curl -X POST "http://192.168.1.101:8000/uploadfile" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "file=@file_path"`
+2. curl client: `curl -X POST "http://192.168.1.101:8009/uploadfile" -H  "accept: application/json" -H  "Content-Type: multipart/form-data" -F "file=@file_path"`
 
 Output format:
 ```json
 [
     {
-        "start": 0.,
-        "end": 10.,
-        "duration": 7.920000000000021,
+        "start": 0.0,
+        "end": 10.0,
+        "duration": 10.0,
         "aggressiveness": 0,
         "data": "base64 encoded of raw pcm data"
     },
